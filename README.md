@@ -22,4 +22,13 @@ This was written for a Pi 4b with 4GB of memory. general process should apply to
 9. Change the IPv4 address to something that will not conflict with anything else on your main network. hit save.
 10. Back on the network interfaces page, hit the "save" button, then "save and apply"
 11. Wait for ~1 minute then navigate to the IP address you just set to confirm it works. If it does, power the pi down, plug the ethernet cable back into your main network and power the pi back up.
-12.  
+12. Navigate to system>system and set hostname and time zone. Make sure to hit "save" then "save and apply", do this for every step requiring a save 
+![timezone 3](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/82bd3e40-556b-49fb-b96e-95577a358cad)
+13. Navigate to system>administration to set a password, save
+14. Navigate to network>wireless. If you're running a Pi 4 you should see "cypress cyw..." with a few buttons beside it. Hit "scan" and connect to your wifi network
+15. Navigate to system>software and hit "update lists"
+![list 4](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/56303ab9-260c-4910-9e4e-7253015afa88)
+16. First we need to install 2 packages from the "available" tab. use the search function, fins and install wpad-mesh-wolfssl and mesh11sd
+17. Then move over to the tab beside "available" to look at your "installed" packages. Search and UN-install wpad-basic-wolfssl
+18. next if you are using the Alfa AWUS036ACM wifi dongle, we'll need to install 2 more packages. Move back to the "available" tab and install kmod-mt76-usb and kmod-mt76x2u
+
