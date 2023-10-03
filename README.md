@@ -9,8 +9,9 @@ Currently I have not found an integrated voice solution.
 I am certainly no networking guy, this is a process I've pieced together and may not be the best way to do this. This is just what I've done to get a functional mesh running. 
 This was written for a Pi 4b with 4GB of memory. general process should apply to any pi
 
-1. First step is to grab the correct firmware from OpenWRT. https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi. make sure to download the "install" version of the firmware and not the "upgrade" version.
-![firmware page 1](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/f695b218-ec79-4328-95e8-2fe822c54435)
+1.Dont use that page, use the firmware selector. want to use the ext4 not squash fs
+# First step is to grab the correct firmware from OpenWRT. https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi. make sure to download the "install" version of the firmware and not the "upgrade" version.
+#![firmware page 1](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/f695b218-ec79-4328-95e8-2fe822c54435)
 2. Once that's downloaded, flash it to your microSD card. I use Balena etcher, had a bunch of 8GB SD cards which were far larger than needed.
 ![flash 2](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/efa10fcc-7bd0-4424-b962-ee3864d4e90d)
 3. Go ahead and insert the SD card into the Pi but hold off on powering up until we talk over step 4.
@@ -30,11 +31,12 @@ This was written for a Pi 4b with 4GB of memory. general process should apply to
 ![list 4](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/56303ab9-260c-4910-9e4e-7253015afa88)
 16. First we need to install 2 packages from the "available" tab. use the search function, fins and install wpad-mesh-wolfssl and mesh11sd allow overwrite
 17. Then move over to the tab beside "available" to look at your "installed" packages. Search and UN-install wpad-basic-wolfssl
-18. next if you are using the Alfa AWUS036ACM wifi dongle, we'll need to install 2 more packages. Move back to the "available" tab and install kmod-mt76-usb (allow overwrite) and kmod-mt76x2u. for this step i do not allow overwriting of any preinstalled packages.
+18. next if you are using the Alfa AWUS036ACM wifi dongle, we'll need to install 3 more packages. Move back to the "available" tab and install kmod-mt76-core, kmod-mt76-usb  and kmod-mt76x2u. I allowed overwirting of conflicting packages at every step
 19. Once that's complete, navigate back to Network>wireless. it should look something like this, assuming you have the Alfa dongle plugged in. The "cypress..." entry is the Pi's onboard wifi, and the "generic MAC 80211...." is the Alfa dongle
 ![6wirelss](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/f007c590-b416-4259-a19e-904564698e54)
 20. remove the connection to your home wifi network
-21. On the "generic MAC..." device hit "add", then fill out the connection info as below. Mode:band: 2.4ghz (if that's what you want) channel: whichever you desire, but all nodes need to be on the same channel. transmit power: I max it out, not sure if the driver/hardware can actually hit that power. Under interface configuration mode: 802.11s and Mesh ID: enter whatever you desire, but every node in the mesh youre building must ahve the same mesh ID. Then under the network dropdown , select "lan"
+21. This section needs some work also
+#On the "generic MAC..." device hit "add", then fill out the connection info as below. Mode:band: 2.4ghz (if that's what you want) channel: whichever you desire, but all nodes need to be on the same channel. transmit power: I max it out, not sure if the driver/hardware can actually hit that power. Under interface configuration mode: 802.11s and Mesh ID: enter whatever you desire, but every node in the mesh youre building must ahve the same mesh ID. Then under the network dropdown , select "lan"
 ![7mesh](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/090cf086-516a-4d70-bbf1-63584b732868)
 22. hit save, then back on the main screen hit save then save and apply
 
