@@ -28,7 +28,14 @@ This was written for a Pi 4b with 4GB of memory. general process should apply to
 14. Navigate to network>wireless. If you're running a Pi 4 you should see "cypress cyw..." with a few buttons beside it. Hit "scan" and connect to your wifi network
 15. Navigate to system>software and hit "update lists"
 ![list 4](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/56303ab9-260c-4910-9e4e-7253015afa88)
-16. First we need to install 2 packages from the "available" tab. use the search function, fins and install wpad-mesh-wolfssl and mesh11sd
+16. First we need to install 2 packages from the "available" tab. use the search function, fins and install wpad-mesh-wolfssl and mesh11sd allow overwrite
 17. Then move over to the tab beside "available" to look at your "installed" packages. Search and UN-install wpad-basic-wolfssl
-18. next if you are using the Alfa AWUS036ACM wifi dongle, we'll need to install 2 more packages. Move back to the "available" tab and install kmod-mt76-usb and kmod-mt76x2u
+18. next if you are using the Alfa AWUS036ACM wifi dongle, we'll need to install 2 more packages. Move back to the "available" tab and install kmod-mt76-usb (allow overwrite) and kmod-mt76x2u. for this step i do not allow overwriting of any preinstalled packages.
+19. Once that's complete, navigate back to Network>wireless. it should look something like this, assuming you have the Alfa dongle plugged in. The "cypress..." entry is the Pi's onboard wifi, and the "generic MAC 80211...." is the Alfa dongle
+![6wirelss](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/f007c590-b416-4259-a19e-904564698e54)
+20. remove the connection to your home wifi network
+21. On the "generic MAC..." device hit "add", then fill out the connection info as below. Mode:band: 2.4ghz (if that's what you want) channel: whichever you desire, but all nodes need to be on the same channel. transmit power: I max it out, not sure if the driver/hardware can actually hit that power. Under interface configuration mode: 802.11s and Mesh ID: enter whatever you desire, but every node in the mesh youre building must ahve the same mesh ID. Then under the network dropdown , select "lan"
+![7mesh](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/090cf086-516a-4d70-bbf1-63584b732868)
+22. hit save, then back on the main screen hit save then save and apply
+
 
