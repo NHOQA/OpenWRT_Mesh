@@ -10,7 +10,8 @@ I am certainly no networking guy, this is a process I've pieced together and may
 This was written for a Pi 4b with 4GB of memory. general process should apply to any pi
 
 1. First step is to grab the correct firmware from OpenWRT. I used the 64 bit ext4 version
-![image](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/41c33805-31a5-40f1-814a-8bf44286f7d6)
+![firmwareselectactual](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/f9ab669f-2dd1-459c-bd22-24a21978fe39)
+
 
 2. Once that's downloaded, flash it to your microSD card. I use Balena etcher, had a bunch of 8GB SD cards which were far larger than needed.
 ![flash 2](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/efa10fcc-7bd0-4424-b962-ee3864d4e90d)
