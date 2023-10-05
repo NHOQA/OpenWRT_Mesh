@@ -13,7 +13,8 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
 
 2. Flash to SD card. I use Balena Etcher for this ![balena](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/e26924e1-faf0-49be-a811-da49508a7cbd)
 
-3. Boot Pi
+3. Boot Pi. This part gets a little complex, may only apply to my particular setup though. 
+   - My router is locked to the 192.168.1.1 IP address and I cannot change it (thanks spectrum). To get around this I created a second network that is completely isolated from my spectrum network. I did this because the default IP that the OpenWRT image you just flashed will also try to use 192.168.1.1, causing a conflict. My setup has a dumb TP link ethernet switch with both the Pi I'm booting and a laptop (with wifi off) connected to it. Nothing else, we'll need to run like this just long enough to get the static IP changed
 4. Set Timezone, Password, Hostname
 5. Set Static IP address
 6. Connect Pi to Internet
