@@ -11,7 +11,8 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
 
 1. Download Firmware from OpenWRT. Grab the EXT4 package ![firmware select](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/8ed6b890-0aa1-484e-bd88-4a1bc200303e)
 
-2. Flash to SD card
+2. Flash to SD card. I use Balena Etcher for this ![balena](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/e26924e1-faf0-49be-a811-da49508a7cbd)
+
 3. Boot Pi
 4. Set Timezone, Password, Hostname
 5. Set Static IP address
