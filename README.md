@@ -16,19 +16,19 @@ This was written for a Pi 4b with 4GB of memory. general process should apply to
 5. Set Static IP address
 6. Connect Pi to Internet
 7. Package Install/Uninstall
-   -WPAD-Mesh-wolfSSL: install, allow overwrite
-   -WPAD-Basic-wolfSSL: uninstall, remove unused packages
-   -MESH11sd: install, allow overwrite
-   -KMOD-MT76-core: install, allow overwrite
-   -KMOD-MT76-USB: install, allow overwrite
-   -KMOD-MT76x2u: install, allow overwrite
+   - WPAD-Mesh-wolfSSL: install, allow overwrite
+   - WPAD-Basic-wolfSSL: uninstall, remove unused packages
+   - MESH11sd: install, allow overwrite
+   - KMOD-MT76-core: install, allow overwrite
+   - KMOD-MT76-USB: install, allow overwrite
+   - KMOD-MT76x2u: install, allow overwrite
 8.Create Mesh Network
-  -Operating Frequency
-  -Channel
-  -Transmit Power
-  -Mode
-  -Mesh ID
-  -Network
+  - Operating Frequency
+  - Channel
+  - Transmit Power
+  - Mode
+  - Mesh ID
+  - Network
 9.Complete
 
 
