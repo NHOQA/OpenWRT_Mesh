@@ -22,8 +22,8 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
    - Navigate to Network>Interfaces
    - Click on the "Edit" button
    - Change IPV4 Address to whatever you want. Note, each node will need to have a different static IP. I just sequenced numerically, 1.1,1.2,1.3 etc. Good idea not to have it conflicting with anything currently on your network, as we'll need to get back onto the main network for internet access soon.
-7. Connect Pi to Internet
-   - 
+ 7. Connect Pi to internet.
+   - Connect 
 9. Package Install/Uninstall
    - WPAD-Mesh-wolfSSL: install, allow overwrite. Do this before removing wpad-basic 
    - WPAD-Basic-wolfSSL: uninstall, remove unused packages
