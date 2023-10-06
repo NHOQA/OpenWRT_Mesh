@@ -26,21 +26,26 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
  7. Connect Pi to internet.![connectwifi](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/8a453488-0bdc-4e73-a976-b7784efbf745)
 
    - At this stage I connected the Pi to my home network wifi. Navigate to Network>wireless. Hit scan beside the "Cypress CYW..." (this is the Pi onboard wifi), and log onto your wireless network as normal. 
-9. Package Install/Uninstall
+9. Package Install/Uninstall. ![softeware](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/6ddfa4cf-4e35-42e4-8e61-5120f397fe44)
+
    - WPAD-Mesh-wolfSSL: install, allow overwrite. Do this before removing wpad-basic 
    - WPAD-Basic-wolfSSL: uninstall, remove unused packages
    - Mesh11sd: install, allow overwrite
    - kmod-MT76-core: install, allow overwrite
    - kmod-MT76-USB: install, allow overwrite
    - kmod-MT76x2u: install, allow overwrite
-10. Create Mesh Network
+10. Create Mesh Network.  now we have the packages installed, navigate back to Network>Wireless. You should see a new interface "Generic 802.11bg", this is the Alfa dongle. Click "add" beside that interface![Dongle in](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/4337cfec-694f-4267-9375-da31148baade)
+
    - Operating Frequency
-   - Channel
+   - Channel (all nodes must be on the same channel)
    - Transmit Power
    - Mode
-   - Mesh ID
+   - Mesh ID (all nodes must share the exact same mesh ID)
    - Network
-9.Complete
+     These are the settings I used ![Meshconfig](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/fd850d73-78a4-400c-b8ab-36e446609682)
+
+9.Complete: once that's done you should be online. I disabled my home wifi at this point and can see that I have 2 other nodes online and they are connected to this node. ![Meshactive](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/229b6161-5f17-48c4-9968-9fbf14f73cc0)
+
 
 
 
