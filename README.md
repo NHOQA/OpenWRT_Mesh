@@ -27,7 +27,7 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
 
    - At this stage I connected the Pi to my home network wifi. Navigate to Network>wireless. Hit scan beside the "Cypress CYW..." (this is the Pi onboard wifi), and log onto your wireless network as normal. 
 9. Package Install/Uninstall. ![softeware](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/6ddfa4cf-4e35-42e4-8e61-5120f397fe44)
-
+   - Navigate to System>Software, hit "update lists" wait for list to populate then search for packages below. to uninstall the wpad-basic, you need to change over to the "installed" tab
    - WPAD-Mesh-wolfSSL: install, allow overwrite. Do this before removing wpad-basic 
    - WPAD-Basic-wolfSSL: uninstall, remove unused packages
    - Mesh11sd: install, allow overwrite
