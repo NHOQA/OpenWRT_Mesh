@@ -18,7 +18,8 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
 4. Set Timezone, Password, Hostname: starting username is root, no password.
    - Timezone and Hostname are located at System>System
    - Password is at System>Administration
-6. Set Static IP address
+6. Set Static IP address![Inkedinterface scree for static IP](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/eafa0a34-0aca-4e6a-b199-a03ff24e24fe)
+
    - Navigate to Network>Interfaces
    - Click on the "Edit" button
    - Change IPV4 Address to whatever you want. Note, each node will need to have a different static IP. I just sequenced numerically, 1.1,1.2,1.3 etc. Good idea not to have it conflicting with anything currently on your network, as we'll need to get back onto the main network for internet access soon.
