@@ -46,7 +46,7 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
 
 9.Complete: once that's done you should be online. I disabled my home wifi at this point and can see that I have 2 other nodes online and they are connected to this node. ![Meshactive](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/229b6161-5f17-48c4-9968-9fbf14f73cc0)
 
-
+tests on10/8/23 lost pings @ ~340 m, poorer than expected performance, any relation to https://forum.openwrt.org/t/raspberry-pi-3b-with-alfa-awus036achm-wifi-adapter-transmit-power-issues/116730/2 ?
 
 
    
