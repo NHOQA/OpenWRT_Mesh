@@ -3,6 +3,8 @@ OpenWRT based 802.11s mesh running on RPi.
 
 BoM:
  - 1 ea. Raspberry pi 4, 4gb  https://www.mouser.com/ProductDetail/Raspberry-Pi/SC01949?qs=T%252BzbugeAwjjISb%252BwlagpRw%3D%3D
+ - 1 ea. MicroSD card
+ - 1 ea. Alfa AWUS036ACHM wifi dongle https://www.amazon.com/AWUS036ACHM-802-11ac-Range-Boost-Adapter/dp/B08SJBV1N3/ref=rvi_sccl_6/133-1308152-8998443?pd_rd_w=LGdq0&content-id=amzn1.sym.f5690a4d-f2bb-45d9-9d1b-736fee412437&pf_rd_p=f5690a4d-f2bb-45d9-9d1b-736fee412437&pf_rd_r=EAZ7EG9WJCSMH5A22JC5&pd_rd_wg=cZVZR&pd_rd_r=071d966d-8f38-453d-97a1-3daad8746531&pd_rd_i=B08SJBV1N3&psc=1
  - 1 ea. 90 degree USB C cable (provide power to Pi) https://www.amazon.com/dp/B0BN1NJQFX?ref=ppx_yo2ov_dt_b_product_details&th=1
  - 1 ea. USB splitter https://www.amazon.com/dp/B08C5FWQND?ref=ppx_yo2ov_dt_b_product_details&th=1
  - 1 ea. USB to ethernet adapter https://www.amazon.com/dp/B09Q5XC7T9?psc=1&ref=ppx_yo2ov_dt_b_product_details
