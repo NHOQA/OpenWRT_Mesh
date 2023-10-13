@@ -1,13 +1,21 @@
 # OpenWRT_Mesh
 OpenWRT based 802.11s mesh running on RPi. 
 
+BoM:
+1 ea. Raspberry pi 4, 4gb  https://www.mouser.com/ProductDetail/Raspberry-Pi/SC01949?qs=T%252BzbugeAwjjISb%252BwlagpRw%3D%3D
+1 ea. 90 degree USB C cable (provide power to Pi) https://www.amazon.com/dp/B0BN1NJQFX?ref=ppx_yo2ov_dt_b_product_details&th=1
+1 ea. USB splitter https://www.amazon.com/dp/B08C5FWQND?ref=ppx_yo2ov_dt_b_product_details&th=1
+1 ea. USB to ethernet adapter https://www.amazon.com/dp/B09Q5XC7T9?psc=1&ref=ppx_yo2ov_dt_b_product_details
+1 ea. USB C cable (charge phone) https://www.amazon.com/etguuds-Charging-Charger-Compatible-Samsung/dp/B0924GYSVS/ref=sr_1_19?crid=1JR78MZOIYX1C&keywords=usb%2Bc%2Bmale%2Bto%2Bmale&qid=1697206580&sprefix=usb%2Bc%2Bmale%2Bto%2Bmale%2Caps%2C85&sr=8-19&th=1
+1 ea. Ravpower 20k mAh power bank https://www.ravpower.com/products/rp-pb201-pd-60w-20000mah-portable-charger
+
 Based pretty heavily on the work done by the guys at ATAK HQ  https://atakhq.com/en/manet/openwrt
 Gives data access to ATAK in excess of what is available with the Meshtastic forwarder plugin.
-Have successfully send location, markers, test and pictures through ATAK with this hardware. The built in ICE plugin for voice also works, but I have not purchased the licenses to do any extended testing
-Currently I have not found an integrated voice solution that doesnt require purchasing a license.
+Have successfully send location, markers, test and pictures through ATAK with this hardware. The built in ICE plugin for voice also works, but I have not purchased the licenses to do any extended testing. Voice plug in is functional, but have not spent the time to find the solution to getting that audio piped into a headset.
+
 
 I am certainly no networking guy, this is a process I've pieced together and may not be the best way to do this. This is just what I've done to get a functional mesh running. 
-This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external dongle. I'm using the 2.4 ghz band for these units. General process should apply to any pi
+This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACHM external dongle. I'm using the 2.4 ghz band for these units. General process should apply to any pi
 
 1. Download Firmware from OpenWRT. Grab the EXT4 package ![firmware select](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/8ed6b890-0aa1-484e-bd88-4a1bc200303e)
 
@@ -31,10 +39,9 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
    - WPAD-Mesh-wolfSSL: install, allow overwrite. Do this before removing wpad-basic 
    - WPAD-Basic-wolfSSL: uninstall, remove unused packages
    - Mesh11sd: install, allow overwrite
-   - kmod-MT76-core: install, allow overwrite
-   - kmod-MT76-USB: install, allow overwrite
-   - kmod-MT76x2u: install, allow overwrite
-10. Create Mesh Network.  now we have the packages installed, navigate back to Network>Wireless. You should see a new interface "Generic 802.11bg", this is the Alfa dongle. Click "add" beside that interface![Dongle in](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/4337cfec-694f-4267-9375-da31148baade)
+   - kmod-mt76x0u: install, allow overwrite ( this is the driver set for the Alfa dongle)
+     
+10. Create Mesh Network.  now we have the packages installed, navigate back to Network>Wireless. You should see a new interface "Generic 802.11acbg", this is the Alfa dongle. Click "add" beside that interface![Dongle in](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/4337cfec-694f-4267-9375-da31148baade)
 
    - Operating Frequency
    - Channel (all nodes must be on the same channel)
@@ -46,7 +53,7 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACM external
 
 9.Complete: once that's done you should be online. I disabled my home wifi at this point and can see that I have 2 other nodes online and they are connected to this node. ![Meshactive](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/229b6161-5f17-48c4-9968-9fbf14f73cc0)
 
-tests on10/8/23 lost pings @ ~340 m, poorer than expected performance, any relation to https://forum.openwrt.org/t/raspberry-pi-3b-with-alfa-awus036achm-wifi-adapter-transmit-power-issues/116730/2 ?
+
 
 
    
