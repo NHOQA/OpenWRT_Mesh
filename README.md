@@ -2,12 +2,12 @@
 OpenWRT based 802.11s mesh running on RPi. 
 
 BoM:
- -1 ea. Raspberry pi 4, 4gb  https://www.mouser.com/ProductDetail/Raspberry-Pi/SC01949?qs=T%252BzbugeAwjjISb%252BwlagpRw%3D%3D
- -1 ea. 90 degree USB C cable (provide power to Pi) https://www.amazon.com/dp/B0BN1NJQFX?ref=ppx_yo2ov_dt_b_product_details&th=1
- -1 ea. USB splitter https://www.amazon.com/dp/B08C5FWQND?ref=ppx_yo2ov_dt_b_product_details&th=1
- -1 ea. USB to ethernet adapter https://www.amazon.com/dp/B09Q5XC7T9?psc=1&ref=ppx_yo2ov_dt_b_product_details
- -1 ea. USB C cable (charge phone) https://www.amazon.com/etguuds-Charging-Charger-Compatible-Samsung/dp/B0924GYSVS/ref=sr_1_19?crid=1JR78MZOIYX1C&keywords=usb%2Bc%2Bmale%2Bto%2Bmale&qid=1697206580&sprefix=usb%2Bc%2Bmale%2Bto%2Bmale%2Caps%2C85&sr=8-19&th=1
- -1 ea. Ravpower 20k mAh power bank https://www.ravpower.com/products/rp-pb201-pd-60w-20000mah-portable-charger
+ - 1 ea. Raspberry pi 4, 4gb  https://www.mouser.com/ProductDetail/Raspberry-Pi/SC01949?qs=T%252BzbugeAwjjISb%252BwlagpRw%3D%3D
+ - 1 ea. 90 degree USB C cable (provide power to Pi) https://www.amazon.com/dp/B0BN1NJQFX?ref=ppx_yo2ov_dt_b_product_details&th=1
+ - 1 ea. USB splitter https://www.amazon.com/dp/B08C5FWQND?ref=ppx_yo2ov_dt_b_product_details&th=1
+ - 1 ea. USB to ethernet adapter https://www.amazon.com/dp/B09Q5XC7T9?psc=1&ref=ppx_yo2ov_dt_b_product_details
+ - 1 ea. USB C cable (charge phone) https://www.amazon.com/etguuds-Charging-Charger-Compatible-Samsung/dp/B0924GYSVS/ref=sr_1_19?crid=1JR78MZOIYX1C&keywords=usb%2Bc%2Bmale%2Bto%2Bmale&qid=1697206580&sprefix=usb%2Bc%2Bmale%2Bto%2Bmale%2Caps%2C85&sr=8-19&th=1
+ - 1 ea. Ravpower 20k mAh power bank https://www.ravpower.com/products/rp-pb201-pd-60w-20000mah-portable-charger
 
 Based pretty heavily on the work done by the guys at ATAK HQ  https://atakhq.com/en/manet/openwrt
 Gives data access to ATAK in excess of what is available with the Meshtastic forwarder plugin.
