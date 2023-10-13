@@ -14,7 +14,7 @@ BoM:
 
 Based pretty heavily on the work done by the guys at ATAK HQ  https://atakhq.com/en/manet/openwrt
 Gives data access to ATAK in excess of what is available with the Meshtastic forwarder plugin.
-Have successfully send location, markers, test and pictures through ATAK with this hardware. The built in ICE plugin for voice also works, but I have not purchased the licenses to do any extended testing. Voice plug in is functional, but have not spent the time to find the solution to getting that audio piped into a headset.
+Have successfully send location, markers, text, audio, and pictures through ATAK with this hardware. Voice plug in is functional, but have not spent the time to find the solution to getting that audio piped into a headset. Have also sent "video" between EUD's but it was unusable, have not expended any effort on that yet, I'm sure i was just doing something wrong. Testing still needs to happen to look at ranges/bandwidth/battery drain out in the field. This is all coming after getting disappointing results with the Alfa AWUS036ACM (much lower power dongle)
 
 
 I am certainly no networking guy, this is a process I've pieced together and may not be the best way to do this. This is just what I've done to get a functional mesh running. 
