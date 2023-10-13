@@ -12,6 +12,8 @@ BoM:
  - 1 ea. 2' ethernet cable https://www.amazon.com/dp/B003EE30JM?ref=ppx_yo2ov_dt_b_product_details&th=1
  - 1 ea. Ravpower 20k mAh power bank https://www.ravpower.com/products/rp-pb201-pd-60w-20000mah-portable-charger
 
+ - Fusion360 archive for 3d printed case also uploaded, has been updated for the newest dongle. Still in development, will upload versions as they are tested. V24 is the first version using the new wifi dongle, previous versions will not work with this BoM
+
 Based pretty heavily on the work done by the guys at ATAK HQ  https://atakhq.com/en/manet/openwrt
 Gives data access to ATAK in excess of what is available with the Meshtastic forwarder plugin.
 Have successfully send location, markers, text, audio, and pictures through ATAK with this hardware. Voice plug in is functional, but have not spent the time to find the solution to getting that audio piped into a headset. Have also sent "video" between EUD's but it was unusable, have not expended any effort on that yet, I'm sure i was just doing something wrong. Testing still needs to happen to look at ranges/bandwidth/battery drain out in the field. This is all coming after getting disappointing results with the Alfa AWUS036ACM (much lower power dongle)
