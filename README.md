@@ -52,7 +52,7 @@ This was written for a Pi 4b with 4GB of memory with an Alfa AWUS036ACHM externa
    - Mode
    - Mesh ID (all nodes must share the exact same mesh ID)
    - Network
-     These are the settings I used ![Meshconfig](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/fd850d73-78a4-400c-b8ab-36e446609682)
+     These are the settings I used (note this is a screenshot from a previous build with the ACM dongle, power setting may vary with the ACHM. Also note the power setting here is likely bugged, theres some talk about this on the forums. something about an internal amp bringing the output to 30 dbm even though it shows much less in the GUI) ![Meshconfig](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/fd850d73-78a4-400c-b8ab-36e446609682)
 
 9.Complete: once that's done you should be online. I disabled my home wifi at this point and can see that I have 2 other nodes online and they are connected to this node. ![Meshactive](https://github.com/boyette2001/OpenWRT_Mesh/assets/74009174/229b6161-5f17-48c4-9968-9fbf14f73cc0)
 
