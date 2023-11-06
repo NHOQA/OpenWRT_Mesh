@@ -1,6 +1,8 @@
 # OpenWRT_Mesh
 OpenWRT based 802.11s mesh running on RPi. 
 
+This was written for OpenWRT 22.03, there were some changes to the package list with 23.05 and this guide will not be directly applicable 
+
 BoM:
  - 1 ea. Raspberry pi 4, 4gb  https://www.mouser.com/ProductDetail/Raspberry-Pi/SC01949?qs=T%252BzbugeAwjjISb%252BwlagpRw%3D%3D
  - 1 ea. MicroSD card
